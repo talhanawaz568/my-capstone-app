@@ -1,13 +1,15 @@
-name: Build and Deploy 
+name: Build and Deploy
+
 on:
   push:
     branches: [main]
+
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@4
+        uses: actions/checkout@v4
 
       - name: Set short SHA
         id: vars
@@ -31,7 +33,7 @@ jobs:
       - name: Checkout configs repo
         uses: actions/checkout@v4
         with:
-          repository: talha884/my-capstone-configs
+          repository: talhanawaz568/my-capstone-configs
           token: ${{ secrets.CONFIG_REPO_TOKEN }}
           path: configs-repo
 
