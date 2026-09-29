@@ -7,6 +7,7 @@ app = Flask(__name__)
 def hello():
     version = os.environ.get('APP_VERSION', 'v1')
     return f'Hello from Capstone App! Version: {version}\n'
+    return f'Hello from Capstone App! Version: {version} - UPDATED!\n'
 
 @app.route('/health')
 def health():
