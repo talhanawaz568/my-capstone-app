@@ -146,7 +146,7 @@ HTML_TEMPLATE = """
         </div>
 
         <div class="footer">
-            Deployed via <strong>GitHub Actions</strong> → <strong>ArgoCD</strong> → <strong>Kubernetes</strong>
+            Deployed via <strong>GitHub-Actions</strong> → <strong>ArgoCD</strong> → <strong>Kubernetes</strong>
         </div>
     </div>
 </body>
